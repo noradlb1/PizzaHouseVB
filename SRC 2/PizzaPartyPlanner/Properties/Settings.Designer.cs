@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Pizzacı.Properties
+namespace PizzaPartyPlanner.Properties
 {
 
 

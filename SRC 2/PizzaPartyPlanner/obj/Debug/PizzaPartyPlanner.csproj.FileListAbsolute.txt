@@ -1,0 +1,11 @@
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\bin\Debug\PizzaPartyPlanner.exe.config
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\bin\Debug\PizzaPartyPlanner.exe
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\bin\Debug\PizzaPartyPlanner.pdb
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.csproj.AssemblyReference.cache
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.frmPizzaParty.resources
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.Properties.Resources.resources
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.Report.resources
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.csproj.GenerateResource.cache
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.csproj.CoreCompileInputs.cache
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.exe
+C:\Users\MONSTERMC\Downloads\PizzaParty-master\PizzaParty-master\PizzaPartyPlanner\obj\Debug\PizzaPartyPlanner.pdb
