@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CB0A54C-8CD1-052B-31FE-33041EF8D504}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>PizzaShop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.cs</DefaultItemExcludes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG,TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PizzaShop.ApplicationForm</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Net4.1.0.0\lib\net40\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForm.Designer.vb">
+      <DependentUpon>ApplicationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPizza.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.vb" />
+    <EmbeddedResource Include="ApplicationForm.resx">
+      <DependentUpon>ApplicationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Properties\Resources\Fonts\Italiano .otf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\close-white-thick-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\close-white-thin-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Logo-350x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\menu-white-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\maximize-active-white-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\maximize-inactive-white-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\minimize-thick-white-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\minimize-thin-white-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\specialties_white_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\custom_white_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\order-white-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Menu-920x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom-920x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Order-920x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Specials-920x250.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Logo-400x400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\info-white-thick-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\info-white-thin-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\settings-white-thick-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\settings-white-thin-24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\cheese-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\cheese-pizza-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\pepperoni-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\pepperoni-pizza-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\bbq-pizza-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\bbq-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\supreme-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Pizza\supreme-pizza-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Pizza\taco-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Pizza\breakfast-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Pizza\spinach-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Pizza\loaded-potato-pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Crust\crust_handtossed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Crust\crust_pan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Crust\crust_stuffed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Crust\crust_thin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Bacon_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Bacon_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_BananaPepper_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_BananaPepper_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_GreenBellPepper_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_GreenBellPepper_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Ham_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Ham_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_ItalianSausage_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_ItalianSausage_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Jalepeno_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Jalepeno_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Mushroom_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Olives_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Olives_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Onion_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Onion_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Pepperoni_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Pepperoni_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Pineapple_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Pineapple_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Tomato_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Tomato_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\cheese_mozz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\Images\Custom\Toppings\topping_Mushroom_extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\button-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\button-left-selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\button-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\button-right-selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\button-whole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\button-whole-selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Bacon_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Bacon_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Bacon_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Bacon_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_BananaPepper_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_BananaPepper_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_BananaPepper_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_BananaPepper_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_GreenBellPepper_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_GreenBellPepper_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_GreenBellPepper_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_GreenBellPepper_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Ham_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Ham_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Ham_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Ham_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_ItalianSausage_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_ItalianSausage_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_ItalianSausage_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_ItalianSausage_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Jalepeno_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Jalepeno_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Jalepeno_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Jalepeno_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Mushroom_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Mushroom_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Mushroom_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Mushroom_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Olives_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Olives_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Olives_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Olives_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Onion_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Onion_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Onion_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Onion_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pepperoni_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pepperoni_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pepperoni_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pepperoni_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pineapple_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pineapple_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pineapple_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Pineapple_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Tomato_extra_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Tomato_extra_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Tomato_reg_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\Custom\Toppings\imagesLR\topping_Tomato_reg_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources\Images\error_red_18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
