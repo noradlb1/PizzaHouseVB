@@ -1,0 +1,10 @@
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Pizzacı.vbproj.AssemblyReference.cache
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Pizzacı.Form1.resources
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Resources.resources
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Pizzacı.vbproj.GenerateResource.cache
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Pizzacı.vbproj.CoreCompileInputs.cache
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Pizzacı.exe
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\obj\Debug\Pizzacı.pdb
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\bin\Debug\Pizzacı.exe.config
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\bin\Debug\Pizzacı.exe
+C:\Users\MONSTERMC\Downloads\pizzaOtomasyonu-master\pizzaOtomasyonu-master\bin\Debug\Pizzacı.pdb
