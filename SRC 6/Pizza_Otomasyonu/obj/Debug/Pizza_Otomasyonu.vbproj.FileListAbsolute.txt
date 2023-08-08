@@ -1,0 +1,9 @@
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\obj\Debug\Pizza_Otomasyonu.Form1.resources
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\obj\Debug\Resources.resources
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\obj\Debug\Pizza_Otomasyonu.vbproj.GenerateResource.cache
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\obj\Debug\Pizza_Otomasyonu.vbproj.CoreCompileInputs.cache
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\obj\Debug\Pizza_Otomasyonu.exe
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\obj\Debug\Pizza_Otomasyonu.pdb
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\bin\Debug\Pizza_Otomasyonu.exe.config
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\bin\Debug\Pizza_Otomasyonu.exe
+C:\Users\MONSTERMC\Downloads\PizzaApp-master\PizzaApp-master\Pizza_Otomasyonu\bin\Debug\Pizza_Otomasyonu.pdb
